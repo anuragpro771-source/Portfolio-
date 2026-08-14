@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anurag — Discord Developer & YouTuber Manager</title>
+<meta name="description" content="Anurag — Discord Developer, Bot Developer and YouTuber Manager with 3–4+ years of experience.">
+<style>
+:root{--bg:#050507;--card:rgba(255,255,255,.055);--line:rgba(255,255,255,.11);--text:#f7f7fb;--muted:#a7a7b4;--purple:#8b5cf6;--blue:#38bdf8;--max:1120px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+.bg-animation{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.bg-animation span{position:absolute;width:5px;height:5px;border-radius:50%;background:#8b5cf6;opacity:.35;box-shadow:0 0 18px #8b5cf6;animation:float 12s linear infinite}
+.bg-animation span:nth-child(1){left:8%;top:85%;animation-delay:0s}
+.bg-animation span:nth-child(2){left:18%;top:65%;animation-delay:2s}
+.bg-animation span:nth-child(3){left:31%;top:90%;animation-delay:4s}
+.bg-animation span:nth-child(4){left:45%;top:70%;animation-delay:1s}
+.bg-animation span:nth-child(5){left:58%;top:88%;animation-delay:5s}
+.bg-animation span:nth-child(6){left:69%;top:62%;animation-delay:3s}
+.bg-animation span:nth-child(7){left:79%;top:82%;animation-delay:6s}
+.bg-animation span:nth-child(8){left:88%;top:55%;animation-delay:1.5s}
+.bg-animation span:nth-child(9){left:94%;top:92%;animation-delay:4.5s}
+.bg-animation span:nth-child(10){left:52%;top:50%;animation-delay:7s}
+@keyframes float{0%{transform:translateY(30vh) scale(.6);opacity:0}15%{opacity:.35}50%{transform:translateY(-20vh) translateX(35px) scale(1)}85%{opacity:.2}100%{transform:translateY(-90vh) translateX(-30px) scale(.5);opacity:0}}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(circle at 80% 0%,rgba(139,92,246,.16),transparent 30%),radial-gradient(circle at 10% 20%,rgba(56,189,248,.08),transparent 25%),var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.animated-bg{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:-1;background:radial-gradient(circle at 50% 40%,rgba(95,60,190,.08),transparent 38%)}
+.animated-bg span{position:absolute;width:2px;height:2px;border-radius:50%;background:#9b7cff;box-shadow:0 0 12px #8b5cf6;animation:float 9s linear infinite;opacity:.7}
+.animated-bg span:nth-child(1){left:8%;top:85%;animation-delay:-2s}.animated-bg span:nth-child(2){left:24%;top:60%;animation-delay:-6s}.animated-bg span:nth-child(3){left:48%;top:92%;animation-delay:-4s}.animated-bg span:nth-child(4){left:72%;top:75%;animation-delay:-8s}.animated-bg span:nth-child(5){left:91%;top:48%;animation-delay:-1s}
+.animated-bg i{position:absolute;width:240px;height:240px;border:1px solid rgba(139,92,246,.10);border-radius:50%;animation:drift 14s ease-in-out infinite}
+.animated-bg i:nth-child(6){left:-90px;top:20%}.animated-bg i:nth-child(7){right:-100px;top:45%;animation-delay:-5s}.animated-bg i:nth-child(8){left:30%;bottom:-170px;animation-delay:-8s}.animated-bg i:nth-child(9){right:20%;top:-160px;animation-delay:-3s}.animated-bg i:nth-child(10){left:55%;top:35%;width:180px;height:180px;animation-delay:-10s}
+@keyframes float{0%{transform:translateY(20vh) scale(.7);opacity:0}20%{opacity:.8}80%{opacity:.8}100%{transform:translateY(-100vh) scale(1.5);opacity:0}}
+@keyframes drift{0%,100%{transform:translate(0,0) rotate(0deg)}50%{transform:translate(35px,-25px) rotate(35deg)}}.wrap{width:min(92%,var(--max));margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(5,5,7,.7);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.08em}.brand span{color:var(--purple)}
+.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:#fff}
+.hero{min-height:calc(100vh - 68px);display:grid;place-items:center;padding:90px 0;position:relative}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;background:rgba(139,92,246,.13);filter:blur(100px);right:-120px;top:80px;pointer-events:none}
+.badge{display:inline-flex;padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:#d9d9e4;font-size:.82rem;margin-bottom:22px;box-shadow:0 0 35px rgba(139,92,246,.08)}
+h1{font-size:clamp(3.2rem,9vw,7rem);line-height:.92;letter-spacing:-.07em;max-width:900px}
+.gradient{background:linear-gradient(100deg,#fff 20%,#b9a1ff 60%,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:720px;color:var(--muted);font-size:1.08rem;margin:25px 0 32px}.buttons{display:flex;flex-wrap:wrap;gap:12px}.btn{padding:12px 18px;border-radius:12px;border:1px solid var(--line);font-weight:700;background:rgba(255,255,255,.06);transition:.25s}.btn.primary{background:#fff;color:#08080b}.btn:hover{transform:translateY(-3px);border-color:rgba(139,92,246,.7);box-shadow:0 12px 35px rgba(139,92,246,.15)}
+section{padding:95px 0}.eyebrow{color:#a78bfa;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:800}.title{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em;margin:8px 0 14px}.lead{color:var(--muted);max-width:700px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}.card{background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.025));border:1px solid var(--line);border-radius:20px;padding:24px;backdrop-filter:blur(12px);transition:.3s}.card:hover{transform:translateY(-5px);border-color:rgba(139,92,246,.45);box-shadow:0 20px 50px rgba(0,0,0,.25)}.icon{font-size:1.6rem;margin-bottom:14px}.card h3{margin-bottom:7px}.card p{color:var(--muted);font-size:.93rem}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}.stat{font-size:3rem;font-weight:900;letter-spacing:-.05em}.stat small{display:block;font-size:.85rem;color:var(--muted);letter-spacing:0}
+.timeline{margin-top:30px;border-left:1px solid var(--line);padding-left:24px}.event{position:relative;margin:0 0 28px}.event:before{content:"";position:absolute;width:10px;height:10px;border-radius:50%;background:var(--purple);left:-30px;top:8px;box-shadow:0 0 20px var(--purple)}.event span{color:#a78bfa;font-size:.8rem;font-weight:800}.event h3{margin:3px 0}.event p{color:var(--muted)}
+.project{min-height:210px;display:flex;flex-direction:column;justify-content:space-between}.project .placeholder{height:90px;border-radius:14px;border:1px dashed rgba(255,255,255,.18);display:grid;place-items:center;color:#777785;margin-bottom:18px;background:rgba(255,255,255,.025)}
+.contact{border:1px solid var(--line);border-radius:28px;padding:45px;background:linear-gradient(120deg,rgba(139,92,246,.12),rgba(56,189,248,.06),rgba(255,255,255,.03));display:flex;justify-content:space-between;gap:30px;align-items:center}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#777785;font-size:.85rem}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.navlinks{display:none}.hero{padding:70px 0}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.contact{flex-direction:column;align-items:flex-start}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}section{padding:70px 0}h1{font-size:3.4rem}.hero p{font-size:1rem}.contact{padding:30px 22px}}
+</style>
+</head>
+<body>
+<div class="animated-bg" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span>
+  <i></i><i></i><i></i><i></i><i></i>
+</div>
+<div class="bg-animation" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span>
+  <span></span><span></span><span></span><span></span><span></span>
+</div>
+<nav><div class="wrap nav"><a class="brand" href="#">ANURAG<span>.</span></a><div class="navlinks"><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero"><div class="wrap reveal">
+<div class="badge">● Available for selected projects</div>
+<h1>Build. Manage.<br><span class="gradient">Create Impact.</span></h1>
+<p><b>Discord Developer • Bot Developer • YouTuber Manager</b><br>Building powerful Discord bots, communities and digital solutions while helping creators manage and grow their communities.</p>
+<div class="buttons"><a class="btn primary" href="#skills">View My Skills ↓</a><a class="btn" href="#contact">Contact Me</a></div>
+</div></header>
+
+<section id="about"><div class="wrap about reveal"><div><div class="eyebrow">About me</div><h2 class="title">Developer mindset. Creator experience.</h2><p class="lead">I'm Anurag, a Discord Developer, Bot Developer and YouTuber Manager with 3–4+ years of hands-on experience. I work across Discord communities, custom bots, server management, automation and creator support.</p></div><div class="card"><div class="stat">3–4+</div><small>YEARS OF EXPERIENCE</small><hr style="border:0;border-top:1px solid var(--line);margin:22px 0"><p>Discord development, bot systems, community operations and YouTuber/creator management.</p></div></div></section>
+
+<section id="skills"><div class="wrap reveal"><div class="eyebrow">Skills</div><h2 class="title">What I work with.</h2><p class="lead">A focused toolkit for building and managing modern Discord communities and creator ecosystems.</p>
+<div class="grid">
+<div class="card"><div class="icon">🤖</div><h3>Discord Bot Development</h3><p>Custom bot features, commands, moderation and automation.</p></div>
+<div class="card"><div class="icon">🟣</div><h3>Discord.js</h3><p>Interactive Discord systems and integrations.</p></div>
+<div class="card"><div class="icon">⚡</div><h3>Node.js</h3><p>Backend logic and scalable bot services.</p></div>
+<div class="card"><div class="icon">🛡️</div><h3>Server Management</h3><p>Structure, moderation and community operations.</p></div>
+<div class="card"><div class="icon">⚙️</div><h3>Automation</h3><p>Workflows that reduce repetitive community tasks.</p></div>
+<div class="card"><div class="icon">🎥</div><h3>YouTuber Management</h3><p>Creator support, coordination and community management.</p></div>
+<div class="card"><div class="icon">👥</div><h3>Community Management</h3><p>Healthy, organized and engaging communities.</p></div>
+<div class="card"><div class="icon">🔗</div><h3>API Integration</h3><p>Connecting bots and services to useful external systems.</p></div>
+<div class="card"><div class="icon">📈</div><h3>Creator Management</h3><p>Organization and support for creator ecosystems.</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap reveal"><div class="eyebrow">Services</div><h2 class="title">How I can help.</h2><div class="grid">
+<div class="card"><h3>Custom Discord Bots</h3><p>Tailored bots built around your server's exact needs.</p></div>
+<div class="card"><h3>Server Setup & Management</h3><p>Professional server structure, roles, channels and operations.</p></div>
+<div class="card"><h3>Discord Automation</h3><p>Automate moderation, notifications and repetitive workflows.</p></div>
+<div class="card"><h3>YouTuber / Creator Management</h3><p>Creator coordination, community support and organization.</p></div>
+<div class="card"><h3>Community Management</h3><p>Help keep communities organized, active and welcoming.</p></div>
+<div class="card"><h3>Custom Discord Solutions</h3><p>Unique systems for creators, communities and online projects.</p></div>
+</div></div></section>
+
+<section><div class="wrap reveal"><div class="eyebrow">Experience</div><h2 class="title">Built through years of practice.</h2><div class="timeline">
+<div class="event"><span>3–4+ YEARS</span><h3>Discord Development</h3><p>Building and improving Discord communities and custom systems.</p></div>
+<div class="event"><span>ONGOING</span><h3>Bot Development</h3><p>Creating custom bots, automation and useful integrations.</p></div>
+<div class="event"><span>ONGOING</span><h3>Server Management</h3><p>Managing community structure, moderation and operations.</p></div>
+<div class="event"><span>ONGOING</span><h3>YouTuber & Creator Management</h3><p>Supporting creators with community management, organization and coordination.</p></div>
+</div></div></section>
+
+
+
+<section><div class="wrap reveal"><div class="card" style="padding:42px"><div class="eyebrow">Creator management</div><h2 class="title">Helping creators stay focused.</h2><p class="lead">I bring developer and community experience together to support YouTubers and creators — from Discord management and community operations to organization, coordination and creator support.</p></div></div></section>
+
+<section id="contact"><div class="wrap reveal"><div class="contact"><div><div class="eyebrow">Contact</div><h2 class="title">Let's build something.</h2><p class="lead">Have a Discord project, bot idea or creator community to manage? Reach out.</p></div><div class="buttons"><button class="btn primary" type="button" onclick="copyDiscord()">Discord: nexor.exe</button><a class="btn" href="mailto:anuragpro771@gmail.com">Email: anuragpro771@gmail.com</a></div></div></div></section>
+
+<footer><div class="wrap">© 2026 Anurag. All rights reserved.</div></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+function copyDiscord(){navigator.clipboard?.writeText("nexor.exe");alert("Discord username copied: nexor.exe");}
+</script>
+</body>
+</html>
